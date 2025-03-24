@@ -1,0 +1,171 @@
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: right;
+    padding: auto;
+    /* align-items: center; */
+     height: 50px; 
+    width: 100%;
+    position: fixed;
+    background-color: gray;
+    gap: 20px; 
+    z-index: 10px;
+    
+   
+}
+a svg {
+    fill: black; /* Default icon color */
+    transition: fill 0.3s ease-in-out; /* Smooth color transition */
+}
+
+a:hover svg {
+    fill: blue; /* Change icon color to blue on hover */
+}
+
+
+.header ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.link
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+}
+.foot-link
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    gap: 50px;
+}
+
+.header ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    
+    border-radius: 5px;
+    
+    font-size: 16px;
+    font-weight: bold;
+}
+.about-main
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.pro-img
+{
+    width: 40%;
+    height: 150px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+.about-con
+{
+    width: 40%;
+    margin-top: 90px;
+
+    padding: auto;
+    text-align: justify;
+    /* margin-top: 200px; */
+}
+
+.header ul li:hover {
+     background-color: grey; 
+    color: white;
+    text-align: center;
+}
+
+.home
+{
+    /* margin-top: 40px; Should be greater than .header height */
+    padding-top: 200px;
+     padding-left: 100px; 
+    margin-left: 0px; 
+    display: flex;
+
+    /* justify-content: center; */
+    gap: 400px;
+}
+.about
+{
+    text-align: center;
+}
+.projects
+{   
+    text-align: center;
+    height: 80px;
+    margin-bottom: 450px;
+}
+.cont
+{
+    text-align: center;
+    margin: 50px auto;
+    padding: auto;
+    
+}
+form
+{   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+   
+    padding: auto;
+    
+    
+}
+.cont input, .cont textarea {
+    display: block;   /* Places each input on a new line */
+    margin-bottom: 15px;  /* Adds space between inputs */
+    padding: 12px 15px;   /* Adjusts inner spacing (top-bottom & left-right) */
+    height: 35px;         /* Adjusts the height of input fields */
+    width: 50%;          /* Makes inputs full width */
+    border: 1px solid #ccc; /* Light border for better appearance */
+    border-radius: 5px;   /* Rounds corners slightly */
+    font-size: 16px;      /* Adjusts text size */
+}
+.pro-main
+{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+.pro-con
+{
+    margin-top: 50px;
+}
+
+/* Adjust textarea height separately */
+.cont textarea {
+    height: 500px;  /* Increases the height of the textarea */
+    resize: vertical; /* Allows vertical resizing */
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: gray ;
+    text-align: center;
+}
